@@ -4,37 +4,75 @@ mostrar el resulto por medio de "ALERT"
 ej.: "la Resta es 750"*/ 
 function sumar()
 {	
-	var primerNumero;
-	var segundoNumero;
-	var resultado;
+	var primerNumero
+	var segundoNumero
+	var resultado
 
-	
 	primerNumero=document.getElementById('numeroUno').value;
-	primerNumero=parseInt(primerNumero)
+	primerNumero=parseInt(primerNumero);
 	console.log(primerNumero);
 	segundoNumero=document.getElementById('numeroDos').value;
-	segundoNumero=parseInt(segundoNumero)
+	segundoNumero=parseInt(segundoNumero);
 	console.log(segundoNumero);
 
+	resultado=primerNumero+segundoNumero
 
-	resultado=primerNumero+segundoNumero;
-	
 	console.log(resultado);
-	
+
+
 }
 
 function restar()
 {
-	
+	var primerNumero
+	var segundoNumero
+	var resultado
+
+	primerNumero=document.getElementById('numeroUno').value;
+	primerNumero=parseInt(primerNumero);
+	console.log(primerNumero);
+	segundoNumero=document.getElementById('numeroDos').value;
+	segundoNumero=parseInt(segundoNumero);
+	console.log(segundoNumero);
+
+	resultado=primerNumero-segundoNumero
+
+	console.log(resultado);
 }
 
 function multiplicar()
 { 
-	
+	var primerNumero
+	var segundoNumero
+	var resultado
+
+	primerNumero=document.getElementById('numeroUno').value;
+	primerNumero=parseInt(primerNumero);
+	console.log(primerNumero);
+	segundoNumero=document.getElementById('numeroDos').value;
+	segundoNumero=parseInt(segundoNumero);
+	console.log(segundoNumero);
+
+	resultado=primerNumero*segundoNumero
+
+	console.log(resultado);
 }
 
 function dividir()
 {
-	
+	var primerNumero
+	var segundoNumero
+	var resultado
+
+	primerNumero=document.getElementById('numeroUno').value;
+	primerNumero=parseInt(primerNumero);
+	console.log(primerNumero);
+	segundoNumero=document.getElementById('numeroDos').value;
+	segundoNumero=parseInt(segundoNumero);
+	console.log(segundoNumero);
+
+	resultado=primerNumero/segundoNumero
+
+	console.log(resultado);
 }
 
