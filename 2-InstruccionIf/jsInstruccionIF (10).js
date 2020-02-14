@@ -1,21 +1,20 @@
 function mostrar()
 {
-	var nota;
+	var nota
 	nota=Math.floor(Math.random() * 10) + 1;
-	nota=parseInt(nota);
-	console.log(nota)
+	console.log(nota);
 
-	if(nota<4)
+	if (nota>8)
 	{
-		alert("Vamos, la proxima se puede");
+		alert("EXCELENTE");
 	}else
 	{
-		if(nota>8)
+		if (nota<4) 
 		{
-			alert("EXCELENTE");
+			alert("Vamos, la proxima se puede");
 		}else
 		{
 			alert("APROBO");
 		}
 	}
-}//FIN DE LA FUNCIÓN
+}
