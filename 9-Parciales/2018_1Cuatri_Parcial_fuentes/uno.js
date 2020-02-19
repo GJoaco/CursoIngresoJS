@@ -1,19 +1,16 @@
 
 function mostrar()
 {
-	var ancho
 	var largo
-	var lados
+	var ancho
 	var perimetro
 
-	ancho=prompt("Indrotuzca ancho","Ancho");
-	ancho=parseInt(ancho);
-	largo=prompt("Indrotuzca largo","Largo");
+	largo=prompt("Largo");
 	largo=parseInt(largo);
+	ancho=prompt("ancho");
+	ancho=parseInt(ancho);
 
-	lados=ancho+largo;
-	perimetro=lados*2
-
+	perimetro=largo*2+ancho*2;
 	alert(perimetro);
 
 }
