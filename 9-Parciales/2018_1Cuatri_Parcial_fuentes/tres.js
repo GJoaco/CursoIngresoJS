@@ -89,31 +89,36 @@ function mostrar()
 				contadorQR++;
 				break;
 		}
-		
-		contador++;
-		respuesta=prompt("Desea continuar?");
 
-	}
 
-	if (contadorEfectivo>contadorTarjeta && contadorEfectivo>contadorQR) 
-	{
-		formaDePagoMasUtilizada="efectivo";
-	}
-	else
-	{
-		if(contadorQR>contadorTarjeta)
+		if (contadorEfectivo>contadorTarjeta && contadorEfectivo>contadorQR) 
 		{
-			formaDePagoMasUtilizada="qr";
+			formaDePagoMasUtilizada="efectivo";
 		}
 		else
 		{
-			formaDePagoMasUtilizada="tarjeta";
-		}
+			if(contadorQR>contadorTarjeta)
+			{
+				formaDePagoMasUtilizada="qr";
+			}
+			else
+			{
+				formaDePagoMasUtilizada="tarjeta";
+			}
 		
-	}	
+		}	
+		
+		contador++;
+		respuesta=prompt("Desea continuar?");
+	}
 
 	promedio=acumulador/contador;
 	console.log("maximoDePersonasNombres"+maximoDePersonasNombres);
-	console.log("maximoDeDiasCantidadDePersonas"+maximoDeDiasCantidadDePersonas)
-	console.log("formaDePagoMasUtilizada"+formaDePagoMasUtilizada)
+	console.log("maximoDeDiasCantidadDePersonas"+maximoDeDiasCantidadDePersonas);
+	console.log("formaDePagoMasUtilizada"+formaDePagoMasUtilizada);
+
+	document.write("<br>maximoDePersonasNombres"+maximoDePersonasNombres);
+	document.write("<br>maximoDeDiasCantidadDePersonas"+maximoDeDiasCantidadDePersonas);
+	document.write("<br>formaDePagoMasUtilizada"+formaDePagoMasUtilizada);
+	document.write("<br>"+promedio);
 }
